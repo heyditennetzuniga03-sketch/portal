@@ -43,7 +43,7 @@
    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
     <div class="flex items-center gap-4">
      <div class="flex items-center gap-2 cursor-pointer" onclick="navigate('home')">
-      <img data-template-id="nav-logo" class="canva-image w-9 h-9 rounded-full object-cover" loading="lazy">
+      <img data-template-id="nav-logo" class="canva-image w-9 h-9 rounded-full object-cover">
       <h1 data-template-id="brand-name" class="canva-text text-2xl font-bold"></h1>
      </div>
      <div class="hidden md:flex items-center gap-4 ml-6 text-sm font-medium">
@@ -60,7 +60,7 @@
   </nav><!-- Hero -->
   <section id="sec-home" class="section active pt-16">
    <div class="relative w-full" style="height:calc(72 * min(var(--vh,1vh),1vh))">
-    <img data-template-id="hero-img" class="canva-image w-full h-full object-cover" loading="lazy">
+    <img data-template-id="hero-img" class="canva-image w-full h-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-r from-purple-900/70 via-pink-800/40 to-transparent flex items-center">
      <div class="max-w-7xl mx-auto px-6 w-full">
       <h2 data-template-id="hero-title" class="canva-text text-white text-4xl md:text-5xl font-bold mb-4 max-w-lg"></h2>
@@ -98,7 +98,7 @@
     <p data-template-id="about-text" class="canva-text text-gray-600 leading-relaxed text-center max-w-2xl mx-auto mb-10"></p><!-- About grid with images -->
     <div class="grid md:grid-cols-2 gap-8 mb-12">
      <div class="rounded-2xl overflow-hidden shadow-lg">
-      <img data-template-id="about-team-img" class="canva-image w-full h-64 object-cover" loading="lazy">
+      <img data-template-id="about-team-img" class="canva-image w-full h-64 object-cover">
      </div>
      <div class="flex flex-col justify-center">
       <h3 data-template-id="about-team-title" class="canva-text font-bold text-xl mb-3"></h3>
@@ -111,12 +111,12 @@
       <p data-template-id="about-quality-text" class="canva-text text-gray-600 leading-relaxed"></p>
      </div>
      <div class="rounded-2xl overflow-hidden shadow-lg md:order-2">
-      <img data-template-id="about-warehouse-img" class="canva-image w-full h-64 object-cover" loading="lazy">
+      <img data-template-id="about-warehouse-img" class="canva-image w-full h-64 object-cover">
      </div>
     </div>
     <div class="grid md:grid-cols-2 gap-8 mb-10">
      <div class="rounded-2xl overflow-hidden shadow-lg">
-      <img data-template-id="about-pets-img" class="canva-image w-full h-64 object-cover" loading="lazy">
+      <img data-template-id="about-pets-img" class="canva-image w-full h-64 object-cover">
      </div>
      <div class="flex flex-col justify-center">
       <h3 data-template-id="about-mission-title" class="canva-text font-bold text-xl mb-3"></h3>
@@ -187,7 +187,7 @@
   </div><!-- Footer -->
   <footer data-template-id="footer-section" class="canva-footer py-8">
    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-3">
-    <img data-template-id="footer-logo" class="canva-image w-12 h-12 rounded-full object-cover" loading="lazy">
+    <img data-template-id="footer-logo" class="canva-image w-12 h-12 rounded-full object-cover">
     <p data-template-id="footer-text" class="canva-text text-center text-sm"></p>
    </div>
   </footer>
@@ -225,7 +225,7 @@
       grid.innerHTML = filtered.map(p => `
         <div class="card-product bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-gray-100 hover:border-amber-200" onclick="openProductModal(${p.id})">
           <div class="relative aspect-square bg-gray-50 flex items-center justify-center p-4">
-            <img src="${p.img}" alt="${p.name}" class="max-w-full max-h-full object-contain" loading="lazy">
+            <img src="${p.img}" alt="${p.name}" class="max-w-full max-h-full object-contain">
             <span class="absolute top-3 right-3 text-xs text-white font-semibold px-2.5 py-1 rounded-full ${p.badge==='Nuevo'?'badge-new':'badge-available'}">${p.badge}</span>
           </div>
           <div class="p-4">
